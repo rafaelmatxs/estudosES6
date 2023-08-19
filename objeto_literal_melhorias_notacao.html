@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ES6</title>
+        <script>
+
+            let nome = 'Jorge' // document.getElementById('nome').value
+            let idade = 29
+            let sexo = 'Masculino'
+            let profissao = 'Programador'
+
+            //ES5
+            let objeto = {
+                nome: nome,
+                idade: idade,
+                sexo: sexo,
+                profissao: profissao,
+                exibirResumo: function() {
+                    console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                }
+            }
+
+            console.log(objeto)
+            objeto.exibirResumo()
+
+            //ES6
+            let objeto2 = {
+                nomeTeste: nome,  // exemplo dado antes de modificar a variavel nome para nomeTeste ---> // quando o nome = nome variavel // valor = valor da variavel
+                idade, //<----- quando o nome da variavel tem o mesmo nome do par valor 
+                sexo,
+                profissao,
+                exibirResumo() {
+                    console.log(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)
+                }
+            }
+
+            console.log(objeto2)
+            objeto.exibirResumo()
+
+        </script>
+    </head>
+
+    <body>
+        
+    </body>
+
+</html>
